@@ -1,0 +1,21 @@
+# Sample Documents for Search Tool
+
+## Python
+Python is a high-level, interpreted programming language known for its readability and versatility.
+It supports multiple programming paradigms including procedural, object-oriented, and functional programming.
+Python was created by Guido van Rossum and first released in 1991.
+
+## LangChain
+LangChain is a framework for developing applications powered by language models.
+It provides tools and abstractions for working with LLMs, including chains, agents, and memory systems.
+LangChain v0.3 introduced significant architectural changes and improvements over previous versions.
+
+## YAML
+YAML (YAML Ain't Markup Language) is a human-readable data serialization language.
+It is commonly used for configuration files and applications where data is being stored or transmitted.
+YAML uses indentation to represent data structure, making it more readable than formats like JSON or XML.
+
+## OpenAI
+OpenAI is an AI research laboratory consisting of the for-profit corporation OpenAI LP and its parent company, the non-profit OpenAI Inc.
+They are known for developing language models like GPT-3, GPT-4, and DALL-E.
+OpenAI provides APIs that allow developers to integrate these models into their applications.

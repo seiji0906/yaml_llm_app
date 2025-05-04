@@ -1,0 +1,32 @@
+llm:
+  provider: openai
+  model_name: gpt-3.5-turbo
+  temperature: 0.3
+  max_tokens: 1000
+
+tools:
+  - name: Calculator
+    description: "A tool for performing arithmetic calculations"
+    function: calculator
+    type: function
+
+  - name: DocumentSearch
+    description: "A tool for searching through documents"
+    function: document_search
+    type: retriever
+    path: data/documents.txt
+
+prompt:
+  type: chat
+  template:
+    - role: system
+      content: |
+        You are a helpful assistant that can use tools to answer questions.
+        Think step by step and use the appropriate tools when needed.
+    - role: user
+      content: "{input}"
+
+agent:
+  type: zero_shot_react_description
+  max_iterations: 5
+  verbose: true
