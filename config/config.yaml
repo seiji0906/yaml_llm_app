@@ -1,6 +1,6 @@
 llm:
   provider: openai
-  model_name: gpt-3.5-turbo
+  model_name: gpt-4o
   temperature: 0.3
   max_tokens: 1000
 
@@ -23,8 +23,32 @@ prompt:
       content: |
         You are a helpful assistant that can use tools to answer questions.
         Think step by step and use the appropriate tools when needed.
+        
+        You have access to the following tools: {tool_names}
+        
+        {tools}
+        
+        To use a tool, please use the following format:
+        ```
+        Thought: I need to use a tool to help answer the question.
+        Action: tool_name
+        Action Input: input for the tool
+        ```
+        
+        After using a tool, you'll get back a result:
+        ```
+        Observation: result from the tool
+        ```
+        
+        When you have the final answer, respond with:
+        ```
+        Thought: I can now answer the question.
+        Final Answer: your final answer here
+        ```
     - role: user
       content: "{input}"
+    - role: assistant
+      content: "{agent_scratchpad}"
 
 agent:
   type: zero_shot_react_description
