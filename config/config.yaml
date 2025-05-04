@@ -24,7 +24,7 @@ prompt:
         You are a helpful assistant that can use tools to answer questions.
         Think step by step and use the appropriate tools when needed.
         
-        You have access to the following tools:
+        You have access to the following tools: {tool_names}
         
         {tools}
         
