@@ -8,6 +8,7 @@ This project demonstrates how to build an LLM application using LangChain v0.3, 
 - OpenAI integration with GPT models
 - Tool support (Calculator and Document Search)
 - Flexible and extensible architecture
+- Easy to extend with new tools and capabilities
 
 ## Project Structure
 
